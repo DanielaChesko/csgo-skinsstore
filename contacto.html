@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos/estilos.css">
+    <title>SkinsStore</title>
+    <link rel="shortcut icon" href="./Recursos/header/logo.png" />
+</head>
+<body>
+    <!-- header -->
+    <header class="encabezado">
+        <!-- secciones -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="./contacto.html" class="font-seccion pulse2">Contacto</a>
+                </li>
+                <li>
+                    <a class="pregFrecuentes pulse2" href="./preguntas-frecuentes.html">Preguntas frecuentes</a>
+                </li>
+                <!-- logo -->
+                <li>
+                    <a href="./index.html">
+                        <img src="./Recursos/header/logo.png" alt="logo" class="logo girologo">
+                    </a>
+                </li>
+                <!-- secciones -->
+                <li>
+                    <a href="./nosotros.html" class="font-seccion pulse2">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./tienda.html" class="font-seccion pulse2">Tienda</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!-- body -->
+    <main class="main-contacto">
+        <h1>Seguinos en nuestras redes sociales</h1>
+        <p>No te pierdas de nada</p>
+        <div class="main--redes">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="./Recursos/body/contacto/igcolor.png" alt="link instagram">
+            </a>
+            <a href="https://store.steampowered.com/?l=spanish" target="_blank">
+                <img src="./Recursos/body/contacto/steamcolor.png" alt="link steam">
+            </a>
+        </div>
+        
+        <div class="main--contactodatos">
+            <h3>Contacto</h3>
+            <p>Atención lun. a sab. de 9hs a 21hs.</p>
+            <form action="#" method="get">
+                <span>Nombre:</span>
+                <input class="main--contactonombre " type="text" name="nombre">
+                <span>Email:</span>
+                <input class="main--contactoemail" type="email" name="email">
+                <span>¿Quiere hacer una pregunta o pedir stock de una skin?</span>
+                <select class="main--contactoselect" name="tipo">
+                    <option value="seleccionar">Seleccionar</option>
+                    <option value="arma">Stock</option>
+                    <option value="pregunta">Pregunta</option>
+                </select>
+                <span>Comentario:</span>
+                <textarea class="main--contactotextarea" name="comentario" cols="70" rows="8"></textarea>
+                <input class="main--contactoboton" type="submit">
+            </form>
+        </div>
+        
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-fondo">
+        <p class="footer--mediosPagos">Medios de pago</p>
+        <div class="footer-division">
+            <div class="footer--mediosPagosImagenes">
+                <img src="./Recursos/mercadopago.png" alt="Mercado Pago">
+                <img src="./Recursos/paypal.png" alt="Paypal">
+                <img src="./Recursos/transferencia bancaria.png" alt="Transferencia bancaria">
+                <img src="./Recursos/uala.png" alt="Uala">
+            </div>
+            <div class="footer--extra">
+                <a href="https://www.instagram.com" target="_blank">Seguinos en Instagram
+                    <img src="./Recursos/logoinstagram.png" alt="logoinstagram">
+                </a>
+                <p class="footer--copyright">©CS.GO.SKINS.STORE</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
