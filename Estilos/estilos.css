@@ -260,7 +260,7 @@ header li{ /*alto header*/
     display: flex;
     flex-direction: column;
     padding-top: 140px;
-    background-color: rgb(34, 40, 65);
+    background-color: rgb(30, 39, 58);
     width: 100vw;
 }
 
@@ -551,18 +551,83 @@ header li{ /*alto header*/
 /*------------------------------------------ main nosotros ----------------------------------------*/
 
 .main-nosotros{
+    background-color: #1e273a;
     display: flex;
     flex-direction: column;
-    padding-top: 90px;
 }
 
 .main-nosotros img{
     width: 100vw;
+    margin-top: 90px;
     position: relative;
 }
 
+.main-nosotros h2{
+    background-image: url(../Recursos/body/Nosotros/fondo6.jpg);
+    padding: 3rem 5rem;
+    color: cornsilk;
+    font-style: italic;
+    margin-top: 5px;
+}
 
+.nosotros--principal{
+    display: flex;
+}
 
+.nosotros--principal img{
+    margin-top: 0;
+    padding: 1rem;
+    padding-left: 0;
+    width: 25vw;
+    border-radius: 10px;
+}
+
+.nosotros--principal div h4{
+    background-color: rgb(172, 44, 44);
+    color: aliceblue;
+    padding: 1rem 2rem;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 1rem;
+    width: 45%;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+
+.nosotros--principal div p{
+    padding: 1rem 2rem;
+    color: aliceblue;
+    font-size: 1.1rem;
+}
+
+/*PALETA COLORES
+azul  rgb(41, 52, 98)
+rojo  rgb(242, 76, 76)
+naranja  rgb(236, 155, 59)
+amarillo  rgb(247, 215, 22)
+*/
+
+.nosotros--experiencia{
+    background-color: rgb(41, 52, 98);
+    padding: 2rem 8rem;
+    color: rgb(236, 155, 59);
+    font-size: 20px;
+}
+
+.nostros--grafico{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.nostros--grafico h4{
+    margin: 2rem 1rem;
+}
+
+.nostros--grafico span{
+    color: rgb(242, 76, 76);
+}
 /*------------------------------------------ footer ----------------------------------------*/
 
 .footer-fondo{
