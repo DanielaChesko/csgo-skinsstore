@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Estilos/estilos.css">
-    <title>SKINSSTORE</title>
+    <link rel="stylesheet" href="./Estilos/estilos.css">
+    <title>SkinsStore</title>
+    <link rel="shortcut icon" href="./Recursos/header/logo.png" />
 </head>
 <body>
     <!-- header -->
@@ -14,23 +15,23 @@
         <nav>
             <ul>
                 <li>
-                    <a href="./contacto.html" class="font-seccion">Contacto</a>
+                    <a href="./contacto.html" class="font-seccion pulse2">Contacto</a>
                 </li>
                 <li>
-                    <a href="./preguntas-frecuentes.html" class="font-seccion">Preguntas frecuentes</a>
+                    <a class="pregFrecuentes pulse2" href="./preguntas-frecuentes.html">Preguntas frecuentes</a>
                 </li>
                 <!-- logo -->
                 <li>
                     <a href="./index.html">
-                        <img src="../Recursos/logo2terminado.png" alt="logo" class="logo">
+                        <img src="./Recursos/header/logo.png" alt="logo" class="logo girologo">
                     </a>
                 </li>
                 <!-- secciones -->
                 <li>
-                    <a href="./nosotros.html" class="font-seccion">Nosotros</a>
+                    <a href="./nosotros.html" class="font-seccion pulse2">Nosotros</a>
                 </li>
                 <li>
-                    <a href="./tienda.html" class="font-seccion">Tienda</a>
+                    <a href="./tienda.html" class="font-seccion pulse2">Tienda</a>
                 </li>
             </ul>
         </nav>
@@ -38,106 +39,335 @@
     </header>
 
     <!-- body -->
-    <main>
-        <h1>Renova tu inventario</h1>
-        <p>mostrando 38 productos</p>
-        <section>
-            <img src="" alt="imagen producto">
-            <p>nombre</p>
-            <p>estado</p>
-            <p>float</p>
-            <p>precio</p>
-        </section>
-        <section>
-            <img src="" alt="imagen producto">
-            <p>nombre</p>
-            <p>estado</p>
-            <p>float</p>
-            <p>precio</p>
-        </section>
-        <section>
-            <img src="" alt="imagen producto">
-            <p>nombre</p>
-            <p>estado</p>
-            <p>float</p>
-            <p>precio</p>
-        </section>
-        <section>
-            <img src="" alt="imagen producto">
-            <p>nombre</p>
-            <p>estado</p>
-            <p>float</p>
-            <p>precio</p>
-        </section>
-        <section>
-            <img src="" alt="imagen producto">
-            <p>nombre</p>
-            <p>estado</p>
-            <p>float</p>
-            <p>precio</p>
-        </section>
-        <section>
-            <img src="" alt="imagen producto">
-            <p>nombre</p>
-            <p>estado</p>
-            <p>float</p>
-            <p>precio</p>
-        </section>
-        <section>
-            <img src="" alt="imagen producto">
-            <p>nombre</p>
-            <p>estado</p>
-            <p>float</p>
-            <p>precio</p>
-        </section>
-        <section>
-            <img src="" alt="imagen producto">
-            <p>nombre</p>
-            <p>estado</p>
-            <p>float</p>
-            <p>precio</p>
-        </section>
-        <section>
-            <img src="" alt="imagen producto">
-            <p>nombre</p>
-            <p>estado</p>
-            <p>float</p>
-            <p>precio</p>
-        </section>
-        <section>
-            <img src="" alt="imagen producto">
-            <p>nombre</p>
-            <p>estado</p>
-            <p>float</p>
-            <p>precio</p>
-        </section>
-        <section>
-            <img src="" alt="imagen producto">
-            <p>nombre</p>
-            <p>estado</p>
-            <p>float</p>
-            <p>precio</p>
-        </section>
-        <h3>No encontras lo que buscas? Lo podemos conseguir!</h3>
-        <a href="./contacto.html">Pedilo por aqui</a>
+    <main class="main--tienda">
+        <h1 class="tienda--fraseprincipal">Renova tu inventario</h1>
+        <p class="tienda--mostrar">mostrando 25 productos</p>
+        <div class="listaproductos">
+            <div class="tienda--prod1 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/ak2.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">AK-47</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/fHQJ284NEs.jpg" target="_blank">Ice Coaled</a>
+                    <div class="prod--estado">
+                        <p>Battle-Scarred</p>
+                        <p>Wear: 0.73025304</p>
+                    </div>
+                    <p class="prod--precio"><span>$</span>4.920</p>
+                </div>
+            </div>
+            <div class="tienda--prod2 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/agente.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">Agente</p>
+                    <a class="prod--nombre" href="#">Elite Trapper Solman</a>
+                    <div class="prod--estado">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <p class="prod--precio prod--precio2"><span>$</span>2.460</p>
+                </div>
+            </div>
+            <div class="tienda--prod3 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/eagle.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">Desert Eagle</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/QqPyrXXiKO.jpg" target="_blank">Kumicho Dragon</a>
+                    <div class="prod--estado">
+                        <p>Well-Worn</p>
+                        <p>Wear: 0.44284776</p>
+                    </div>
+                    <p class="prod--precio"><span>$</span>4.100</p>
+                </div>
+            </div>
+            <div class="tienda--prod4 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/m4a1.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">M4A1-S</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/FKY3Gf2jat.jpg" target="_blank">Nightmare</a>
+                    <div class="prod--estado">
+                        <p>Field-Tested</p>
+                        <p>Wear: 0.37698841</p>
+                    </div>
+                    <p class="prod--precio"><span>$</span>2.870</p>
+                </div>
+            </div>
+            <div class="tienda--prod5 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/karambit.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">StatTrak™ Karambit</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/AQEPmTEDWv.jpg" target="_blank">Case Hardened</a>
+                    <div class="prod--estado">
+                        <p>Battle-Scarred</p>
+                        <p>Wear: 0.67236674</p>
+                    </div>
+                    <p class="prod--precio"><span>$</span>222.256</p>
+                </div>
+            </div>
+            <div class="tienda--prod6 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/fama.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">FAMAS</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/XYu09Nf8Gr.jpg" target="_blank">Rapid Eye Movement</a>
+                    <div class="prod--estado">
+                        <p>Field-Tested</p>
+                        <p>Wear: 0.36487561</p>
+                    </div>
+                    <p class="prod--precio"><span>$</span>779</p>
+                </div>
+            </div>
+            <div class="tienda--prod7 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/case.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">Container</p>
+                    <a class="prod--nombre" href="#" target="_blank">Recoil Case</a>
+                    <div class="prod--estado">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <p class="prod--precio prod--precio7"><span>$</span>299</p>
+                </div>
+            </div>
+            <div class="tienda--prod8 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/ak.png" alt="">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">AK-47</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/vngJUCEEGX.jpg" target="_blank">Bloodsport</a>
+                    <div class="prod--estado">
+                        <p>Field-Tested</p>
+                        <p>Wear: 0.17756337</p>
+                    </div>
+                    <p class="prod--precio"><span>$</span>22.140</p>
+                </div>
+            </div>
+            <div class="tienda--prod9 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/guantes.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">Specialist Gloves</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/OuPaIymhAg.jpg" target="_blank">Crimson Kimono</a>
+                    <p class="prod--nombre"></p>
+                    <div class="prod--estado">
+                        <p>Battle-Scarred</p>
+                        <p>Wear: 0.73600525</p>
+                    </div>
+                    <p class="prod--precio"><span>$</span>222.256</p>
+                </div>
+            </div>
+            <div class="tienda--prod10 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/kitmusic.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">Music Kit</p>
+                    <a class="prod--nombre" href="#" target="_blank">Scarlxrd: King, Scar</a>
+                    <div class="prod--estado">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <p class="prod--precio prod--precio10"><span>$</span>1.168</p>
+                </div>
+            </div>
+            <div class="tienda--prod11 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/m4a4.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">M4A4</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/zFL2Y2wJ9b.jpg" target="_blank">Poseidon</a>
+                    <div class="prod--estado">
+                        <p>Minimal Wear</p>
+                        <p>Wear: 0.09262425</p>
+                    </div>
+                    <p class="prod--precio"><span>$</span>354.317</p>
+                </div>
+            </div>
+            <div class="tienda--prod12 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/usp.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">StatTrak™ USP-S</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/IEFjpEoR7P.jpg" target="_blank">Neo-Noir</a>
+                    <div class="prod--estado prod--estado12">
+                        <p>Field-Tested</p>
+                        <p>Wear: 0.28859404</p>
+                    </div>
+                    <p class="prod--precio"><span>$</span>11.693</p>
+                </div>
+            </div>
+            <div class="tienda--prod13 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/capsula.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">Container</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/IEFjpEoR7P.jpg" target="_blank">Cologne 2016 Legends</a>
+                    <div class="prod--estado">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <p class="prod--precio prod--precio13"><span>$</span>6.355</p>
+                </div>
+            </div>
+            <div class="tienda--prod14 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/mag.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">MAG-7</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/lncoMjZqUy.jpg" target="_blank">Justice</a>
+                    <div class="prod--estado">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <p class="prod--precio prod--precio14"><span>$</span>1.783</p>
+                </div>
+            </div>
+            <div class="tienda--prod15 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/fiveseven.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">StatTrak™ Five-SeveN</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/lncoMjZqUy.jpg" target="_blank">Case Hardened</a>
+                    <div class="prod--estado">
+                        <p>Field-Tested</p>
+                        <p>Wear: 0.21210328</p>
+                    </div>
+                    <p class="prod--precio"><span>$</span>38.839</p>
+                </div>
+            </div>
+            <div class="tienda--prod16 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/awp.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">AWP</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/-6299FGiDLi76-yiKSGbQ.jpg" target="_blank">Redline</a>
+                    <div class="prod--estado">
+                        <p>Field-Tested</p>
+                        <p>Wear: 0.25214383</p>
+                    </div>
+                    <p class="prod--precio"><span>$</span>23.734</p>
+                </div>
+            </div>
+            <div class="tienda--prod17 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/case2.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">Container</p>
+                    <a class="prod--nombre" href="#" target="_blank">Operation Bravo Case</a>
+                    <div class="prod--estado">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <p class="prod--precio prod--precio17"><span>$</span>16.400</p>
+                </div>
+            </div>
+            <div class="tienda--prod18 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/mac.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">MAC-10</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/PJC84POqh.jpg" target="_blank">Silver</a>
+                    <div class="prod--estado">
+                        <p>Factory New</p>
+                        <p>Wear: 0.00037389</p>
+                    </div>
+                    <p class="prod--precio prod--precio18"><span>$</span>1.430</p>
+                </div>
+            </div>
+            <div class="tienda--prod19 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/karambit2.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">Karambit</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/IcL9khrVUI.jpg" target="_blank">Damascus Steel</a>
+                    <div class="prod--estado">
+                        <p>Minimal Wear</p>
+                        <p>Wear: 0.09154586</p>
+                    </div>
+                    <p class="prod--precio prod--precio19"><span>$</span>275.110</p>
+                </div>
+            </div>
+            <div class="tienda--prod20 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/p250.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">P250</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/3a7WAPYj2.jpg" target="_blank">Valence</a>
+                    <div class="prod--estado">
+                        <p>Factory New</p>
+                        <p>Wear: 0.00089465</p>
+                    </div>
+                    <p class="prod--precio prod--precio20"><span>$</span>1.840</p>
+                </div>
+            </div>
+            <div class="tienda--prod21 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/xm1014.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">XM1014</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/xyYVGL2pW.jpg" target="_blank">Blue Spruce</a>
+                    <div class="prod--estado">
+                        <p>Well-Worn</p>
+                        <p>Wear: 0.38824183</p>
+                    </div>
+                    <p class="prod--precio prod--precio21"><span>$</span>49</p>
+                </div>
+            </div>
+            <div class="tienda--prod22 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/aug.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">AUG</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/MUaWgeJAm.jpg" target="_blank">Contractor</a>
+                    <div class="prod--estado">
+                        <p>Field-Tested</p>
+                        <p>Wear: 0.24802031</p>
+                    </div>
+                    <p class="prod--precio prod--precio22"><span>$</span>41</p>
+                </div>
+            </div>
+            <div class="tienda--prod23 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/mp5.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">Souvenir MP5-SD</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/09fV5qfHJ.jpg" target="_blank">Lab Rats</a>
+                    <div class="prod--estado">
+                        <p>Factory New</p>
+                        <p>Wear: 0.00003058</p>
+                    </div>
+                    <p class="prod--precio prod--precio23"><span>$</span>6.965</p>
+                </div>
+            </div>
+            <div class="tienda--prod24 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/revolver.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">R8 Revolver</p>
+                    <a class="prod--nombre" href="https://s.swap.gg/kZAwfI3Jk.jpg" target="_blank">Amber Fade</a>
+                    <div class="prod--estado">
+                        <p>Factory New</p>
+                        <p>Wear: 0.00038333</p>
+                    </div>
+                    <p class="prod--precio prod--precio24"><span>$</span>3.070</p>
+                </div>
+            </div>
+            <div class="tienda--prod25 prod">
+                <img class="prod--img" src="./Recursos/body/tienda/capsula2.png" alt="producto">
+                <div class="prod--caracteristicas">
+                    <p class="prod--tipo">Container</p>
+                    <a class="prod--nombre" href="#" target="_blank">Returning 2019</a>
+                    <div class="prod--estado">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <p class="prod--precio prod--precio25"><span>$</span>16.395</p>
+                </div>
+            </div>
+          </div>
+        <div class="tienda--conseguir">
+            <h4>No encontras lo que buscas? Lo podemos conseguir!</h4>
+            <a href="./contacto.html">Pedilo por aqui</a>
+        </div>
     </main>
 
     <!-- footer -->
     <footer class="footer-fondo">
         <p class="footer--mediosPagos">Medios de pago</p>
-        <div class="footer--mediosPagosImagenes">
-            <img src="../Recursos/mercadopago.png" alt="Mercado Pago">
-            <img src="../Recursos/paypal.png" alt="Paypal">
-            <img src="../Recursos/transferencia bancaria.png" alt="Transferencia bancaria">
-            <img src="../Recursos/uala.png" alt="Uala">
+        <div class="footer-division">
+            <div class="footer--mediosPagosImagenes">
+                <img src="./Recursos/footer/mercadopago.png" alt="Mercado Pago">
+                <img src="./Recursos/footer/paypal.png" alt="Paypal">
+                <img src="./Recursos/footer/transferencia bancaria.png" alt="Transferencia bancaria">
+                <img src="./Recursos/footer/uala.png" alt="Uala">
+            </div>
+            <div class="footer--extra">
+                <a href="https://www.instagram.com" target="_blank">Seguinos en Instagram
+                    <img src="./Recursos/footer/igcolor.png" alt="logoinstagram">
+                </a>
+                <p class="footer--copyright">©CS.GO.SKINS.STORE</p>
+            </div>
         </div>
-        <div class="footer--extra">
-            <a href="https://www.instagram.com" target="_blank">Seguinos en Instagram
-                <img src="../Recursos/logoinstagram.png" alt="">
-            </a>
-            <p class="footer--copyright">©CS.GO.SKINS.STORE</p>
-        </div>
-        
     </footer>
 </body>
 </html>
