@@ -40,8 +40,8 @@ amarillo  rgb(247, 215, 22)
 
 
 .logo{
-    width: 105px;
-    height: 105px;
+    width: 115px;
+    height: 115px;
     margin-top: 5px;
 }
 
@@ -62,7 +62,7 @@ header ul {
 }
 
 .font-seccion{
-    font-size: 20px;
+    font-size: 1.5rem;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -78,26 +78,44 @@ header ul {
 }
 
 .pregFrecuentes{ /*para que quede centrado*/
-    font-size: 20px;
+    font-size: 1.45rem;
+    line-height: 24px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    width: 110px;
+    width: 124px;
     font-style: normal;
     font-weight: 600;
     color: rgb(242, 76, 76);
-    height: 50px;
-    margin-top: 15px;
+    height: 65px;
+    margin-top: 10px;
 }
 
 .pregFrecuentes:hover{
     border-bottom: solid 2px;
-
 }
 
 header li{ /*alto header*/
     display: inline-block;
-    height: 90px;
+    height: 80px;
+}
+
+.visibilidad{
+    display: none !important;
+}
+
+.nav-item{
+    height: 50px;
+}
+
+.burger-activo{
+    color: rgb(242, 76, 76)!important;
+    font-size: 16px!important;
+    font-weight: 500!important;
+}
+
+.navbar-toggler .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250, 250, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /*------------------------------------------ main index ----------------------------------------*/
@@ -624,9 +642,9 @@ header li{ /*alto header*/
 
 /*------------------------------------------ main tienda ----------------------------------------*/
 
-.main--tienda{
-    padding: 120px 20px 20px 20px;
-    background-color: rgb(41, 52, 98);
+.main-tienda{
+    padding: 120px 0 20px 0;
+    background-color: rgb(30, 39, 58);
 }
 
 .tienda--fraseprincipal{
@@ -634,20 +652,22 @@ header li{ /*alto header*/
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 5px;
+    padding: 0 40px 0 40px;
 }
 
 .tienda--mostrar{
     color: aliceblue;
     font-size: 0.9rem;
     font-style: italic;
+    padding: 0 40px 0 40px;
 }
 
 .listaproductos{
+    padding: 0 40px 0 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: (5 1fr);
+    grid-template-rows: (5 1fr);
     gap: 6px 15px;
-    grid-auto-flow: row dense;
     grid-template-areas:
       "tienda--prod1 tienda--prod2 tienda--prod3 tienda--prod4 tienda--prod5"
       "tienda--prod6 tienda--prod7 tienda--prod8 tienda--prod9 tienda--prod10"
@@ -655,117 +675,18 @@ header li{ /*alto header*/
       "tienda--prod16 tienda--prod17 tienda--prod18 tienda--prod19 tienda--prod20"
       "tienda--prod21 tienda--prod22 tienda--prod23 tienda--prod24 tienda--prod25";
   }
-  
-.tienda--prod1{
-    grid-area:tienda--prod1;
-}
-
-.tienda--prod2{
-    grid-area:tienda--prod2;
-}
-
-.tienda--prod3{
-    grid-area:tienda--prod3;
-}
-
-.tienda--prod4{
-    grid-area:tienda--prod4;
-}
-
-.tienda--prod5{
-    grid-area:tienda--prod5;
-}
-
-.tienda--prod6{
-    grid-area:tienda--prod6;
-}
-
-.tienda--prod7{
-    grid-area:tienda--prod7;
-}
-
-.tienda--prod8{
-    grid-area:tienda--prod8;
-}
-
-.tienda--prod9{
-    grid-area:tienda--prod9;
-}
-
-.tienda--prod10{
-    grid-area:tienda--prod10;
-}
-
-.tienda--prod11{
-    grid-area:tienda--prod11;
-}
-
-.tienda--prod12{
-    grid-area:tienda--prod12;
-}
-
-.tienda--prod13{
-    grid-area:tienda--prod13;
-}
-
-.tienda--prod14{
-    grid-area:tienda--prod14;
-}
-
-.tienda--prod15{
-    grid-area:tienda--prod15;
-}
-
-.tienda--prod16{
-    grid-area:tienda--prod16;
-}
-
-.tienda--prod17{
-    grid-area:tienda--prod17;
-}
-
-.tienda--prod18{
-    grid-area:tienda--prod18;
-}
-
-.tienda--prod19{
-    grid-area:tienda--prod19;
-}
-
-.tienda--prod20{
-    grid-area:tienda--prod20;
-}
-
-.tienda--prod21{
-    grid-area:tienda--prod21;
-}
-
-.tienda--prod22{
-    grid-area:tienda--prod22;
-}
-
-.tienda--prod23{
-    grid-area:tienda--prod23;
-}
-
-.tienda--prod24{
-    grid-area:tienda--prod24;
-}
-
-.tienda--prod25{
-    grid-area:tienda--prod25;
-}
 
 .prod{
     margin-top: 20px;
     border:solid rgb(45, 53, 173) 0.2rem;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 0 0.4rem;
     box-shadow: 2px 2px 1px 1px rgba(144,160,209,1);
+    width: 100%;
 }
 
 .prod--img{
-    width: 17vw;
+    width: 240px;
 }
 
 .prod--caracteristicas{
@@ -987,9 +908,6 @@ header li{ /*alto header*/
 
 .footer--mediosPagosImagenes img{
     margin-right: 10px;
-}
-
-footer img{
     height: 50px;
 }
 
@@ -1031,4 +949,635 @@ footer a{
     font-size: 13px;
     font-style: oblique;
     font-weight: 500;
+}
+
+
+/*________________________________________ RESPONSIVE ______________________________________*/
+/*------------------------------------------ header ----------------------------------------*/
+@media (max-width: 1300px){
+    .font-seccion{
+        font-size: 1.3rem;
+    }
+    .pregFrecuentes {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 1100px) {
+    .font-seccion{
+        font-size: 1.2rem;
+    }
+    .pregFrecuentes {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 700px){
+    .font-seccion{
+        font-size: 18px;
+    }
+    .pregFrecuentes{
+        font-size: 18px;
+    }
+}
+@media (max-width: 630px) {
+    .visibilidad{
+        display: flex!important;
+        position: relative!important;
+        width: 200px;
+        z-index: 0;
+        padding: 0!important;
+        bottom: 20px;
+        margin: 0 0 0 10px;
+        visibility: collapse;
+    }
+    .encabezado--oculto{
+        display: none;
+    }
+    .navbar-toggler{
+        visibility: visible;
+    }
+    #navbarNav{
+        visibility: visible;
+    }
+    header li{ /*alto header*/
+        display: inline-block;
+        height: 40px;
+    }
+    .container-burger{
+        margin-top: 40px;
+    }
+}
+/*------------------------------------------ index ----------------------------------------*/
+
+/*------------------------------------------ contacto ----------------------------------------*/
+@media (max-width: 1300px){
+    .main-contacto h1{
+        font-size: 50px;
+    }
+    .main-contacto p{
+        font-size: 28px;
+    }
+    .main--redes a img{
+        width: 50px;
+        height: 50px;
+    }
+    .main--contactodatos h3{/*formulario*/
+        font-size: 24px;
+    }
+    .main--contactodatos p{
+        font-size: 18px;
+    }
+    .main--contactodatos form span{
+        font-size: 18px;
+    }
+    .main--contactoselect{
+        font-size: 16px;
+    }
+    .main--contactotextarea{
+        height: 150px;
+    }
+    .main--contactoboton{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1100px){
+    .main-contacto h1{
+        font-size: 40px;
+    }
+    .main-contacto p{
+        font-size: 24px;
+    }
+    .main--redes a img{
+        width: 45px;
+        height: 45px;
+    }
+    .main--contactodatos h3{/*formulario*/
+        font-size: 22px;
+    }
+    .main--contactodatos{
+        padding-top: 60px;
+    }
+    .main--contactodatos p{
+        font-size: 16px;
+    }
+    .main--contactotextarea{
+        height: 130px;
+    }
+}
+@media (max-width: 900px){
+    .main-contacto h1{
+        font-size: 35px;
+    }
+    .main-contacto p{
+        font-size: 24px;
+    }
+    .main--redes a img{
+        width: 40px;
+        height: 40px;
+    }
+    .main--contactodatos h3{/*formulario*/
+        font-size: 20px;
+        border-bottom: 2.5px rgb(236, 155, 59) solid;
+    }
+    .main--contactodatos{
+        padding-top: 50px;
+    }
+    .main--contactodatos p{
+        font-size: 16px;
+    }
+    .main--contactodatos form span{
+        font-size: 16px;
+    }
+    .main--contactoselect{
+        font-size: 14px;
+    }
+    .main--contactoselect option{
+        font-size: 14px;
+    }
+    .main--contactotextarea{
+        height: 130px;
+    }
+    .main--contactoboton{
+        font-size: 14px;
+    }
+}
+@media (max-width: 800px){
+    .main-contacto h1{
+        font-size: 32px;
+    }
+    .main-contacto p{
+        font-size: 22px;
+    }
+    .main--redes a img{
+        width: 40px;
+        height: 40px;
+    }
+    .main--contactodatos h3{
+        font-size: 20px;
+        font-weight: 500;
+        width: 500px;
+    }
+    .main--contactodatos p{
+        width: 500px;
+        font-size: 16px;
+    }
+    .main--contactodatos form{
+        width: 500px;
+    }
+}
+@media (max-width: 700px){
+    .main-contacto h1{
+        font-size: 28px;
+    }
+    .main-contacto p{
+        font-size: 18px;
+    }
+    .main--redes a img{
+        width: 38px;
+        height: 38px;
+    }
+    .main--contactodatos h3{
+        font-size: 18px;
+        font-weight: 400;
+        width: 400px;
+    }
+    .main--contactodatos p{
+        width: 400px;
+        font-size: 14px;
+    }
+    .main--contactodatos form span{
+        font-size: 14px;
+    }
+    .main--contactodatos form{
+        width: 400px;
+    }
+    .main--contactonombre{
+        width: 200px;
+    }
+    .main--contactoemail{
+        width: 300px;
+    }
+    .main--contactoselect{
+        font-size: 12px;
+        width: 110px;
+    }
+    .main--contactoselect option{
+        font-size: 12px;
+    }
+}
+@media (max-width: 600px){
+    .main-contacto h1{
+        font-size: 22px;
+    }
+    .main-contacto p{
+        font-size: 16px;
+    }
+    .main--redes a img{
+        width: 38px;
+        height: 38px;
+    }
+    .main--contactodatos{
+        padding-top: 40px;
+    }
+    .main--contactodatos h3{
+        font-size: 16px;
+        font-weight: 300;
+        width: 350px;
+        border-bottom: 2px rgb(236, 155, 59) solid;
+    }
+    .main--contactodatos p{
+        width: 350px;
+        font-size: 14px;
+    }
+    .main--contactodatos form{
+        width: 350px;
+    }
+    .main--contactodatos form span{
+        font-size: 12px;
+    }
+    .main--contactoboton{
+        font-size: 12px;
+    }
+}
+@media (max-width: 500px){
+    .main-contacto h1{
+        font-size: 20px;
+    }
+}
+@media (max-width: 450px){
+    .main-contacto h1{
+        margin-left: 30px;
+        width: 80vw;
+    }
+    .main-contacto p{
+        font-size: 14px;
+    }
+    .main--redes a img{
+        width: 32px;
+        height: 32px;
+    }
+    .main--contactodatos{
+        padding: 30px;
+    }
+    .main--contactodatos h3{
+        font-size: 16px;
+        font-weight: 300;
+        width: 300px;
+    }
+    .main--contactodatos p{
+        width: 300px;
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .main--contactodatos form{
+        width: 300px;
+    }
+    .main--contactoselect{
+        font-size: 12px;
+        width: 98px;
+        height: 20px;
+    }
+    .main--contactoselect option{
+        font-size: 12px;
+    }
+    .main--contactodatos form span{
+        font-size: 12px;
+    }
+    .main--contactoboton{
+        font-size: 12px;
+        height: 20px;
+    }
+    .main--contactonombre{
+        height: 20px;
+    }
+    .main--contactoemail{
+        height: 20px;
+    }
+}
+@media (max-width: 390px){
+    .main-contacto h1{
+        font-size: 19px;
+        width: 80vw;
+    }
+    .main-contacto p{
+        font-size: 12px;
+    }
+    .main--redes a img{
+        width: 30px;
+        height: 30px;
+    }
+    .main--contactodatos h3{
+        font-size: 14px;
+        border-bottom: 2px;
+        font-weight: 300;
+        width: 300px;
+        border-bottom: 1px rgb(236, 155, 59) solid;
+    }
+}
+/*------------------------------------------ nosotros ----------------------------------------*/
+
+/*------------------------------------------ preg frecuentes ----------------------------------------*/
+
+/*------------------------------------------ tienda ----------------------------------------*/
+
+@media (max-width: 1440px) {
+    
+    .listaproductos{
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: (4 1fr);
+        grid-template-rows: (7 1fr);
+        gap: 6px 14px;
+        grid-template-areas:
+          "tienda--prod1 tienda--prod2 tienda--prod3 tienda--prod4"
+          "tienda--prod5 tienda--prod6 tienda--prod7 tienda--prod8"
+          "tienda--prod9 tienda--prod10 tienda--prod11 tienda--prod12"
+          "tienda--prod13 tienda--prod14 tienda--prod15 tienda--prod16"
+          "tienda--prod17 tienda--prod18 tienda--prod19 tienda--prod20"
+          "tienda--prod21 tienda--prod22 tienda--prod23 tienda--prod24"
+          "tienda--prod25 . . .";
+    }
+    .prod--estado p{
+        width: 110px;
+    }
+    .main-tienda{
+        padding: 120px 5vw 20px 5vw;
+        background-color: rgb(30, 39, 58);
+    }
+    .prod--img{ /*cambio tamaño productos*/
+        width: 93%;
+    }
+    .prod--tipo{
+        font-size: 120%;
+    }
+    .prod--nombre{
+        font-size: 120%;
+    }
+    .prod--estado{
+        font-size: 85%;
+    }
+    .prod--precio{
+        font-size: 130%;
+    }
+    .prod{
+        width: 90%; 
+    }
+}
+
+@media (max-width: 1300px) {
+    
+    .listaproductos{
+        display: grid;
+        max-width: 50%;
+        grid-auto-flow: row dense;
+        grid-template-columns: (3 1fr);
+        grid-template-rows: (9 1fr);
+        gap: 6px 14px;
+        grid-template-areas:
+          "tienda--prod1 tienda--prod2 tienda--prod3"
+          "tienda--prod4 tienda--prod5 tienda--prod6"
+          "tienda--prod7 tienda--prod8 tienda--prod9"
+          "tienda--prod10 tienda--prod11 tienda--prod12"
+          "tienda--prod13 tienda--prod14 tienda--prod15"
+          "tienda--prod16 tienda--prod17 tienda--prod18"
+          "tienda--prod19 tienda--prod20 tienda--prod21"
+          "tienda--prod22 tienda--prod23 tienda--prod24"
+          "tienda--prod25 . .";
+    }
+    .main-tienda{
+        padding: 120px 15vw 20px 10vw;
+    }
+    .prod--img{ /*cambio tamaño productos*/
+        width: 86%;
+    }
+    .prod{
+        width: 85%; 
+    }
+}
+
+@media (max-width: 1100px) {
+    .listaproductos{
+        max-width: 50%;
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: (2 1fr);
+        grid-template-rows: (9 1fr);
+        gap: 6px 14px;
+        grid-template-areas:
+          "tienda--prod1 tienda--prod2"
+          "tienda--prod3 tienda--prod4"
+          "tienda--prod5 tienda--prod6"
+          "tienda--prod7 tienda--prod8"
+          "tienda--prod9 tienda--prod10"
+          "tienda--prod11 tienda--prod12"
+          "tienda--prod13 tienda--prod14"
+          "tienda--prod15 tienda--prod16"
+          "tienda--prod17 tienda--prod18"
+          "tienda--prod19 tienda--prod20"
+          "tienda--prod21 tienda--prod22"
+          "tienda--prod23 tienda--prod24"
+          "tienda--prod25 .";
+    }
+    .tienda--fraseprincipal{
+        font-size: 1.5rem;
+    }
+    .prod--estado p{
+        width: 110px;
+    }
+    .main-tienda{
+        padding: 120px 15vw 20px 21vw;
+    }
+    .prod{ /*cambio tamaño productos*/
+        width: 80%;
+    }
+}
+@media (max-width: 1000px){
+    .main-tienda{
+        padding: 120px 10vw 20px 18vw;
+    }
+}
+@media (max-width: 900px){
+    .main-tienda{
+        padding: 120px 10vw 20px 14vw;
+    }
+    .prod{
+        width: 75%;
+        height: 90%;
+    }
+}
+@media (max-width: 800px){
+    .main-tienda{
+        padding: 140px 10vw 20px 10vw;
+    }
+    .prod--img{ /*cambio tamaño productos*/
+        width: 80%;
+        margin-left: 20px;
+    }
+    .prod{
+        height: 88%;
+    }
+    .prod--estado{
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 700px){
+    .main-tienda{
+        padding: 140px 5vw 20px 8vw;
+    }
+    .prod--img{ /*cambio tamaño productos*/
+        width: 78%;
+    }
+    .prod--tipo{
+        font-size: 120%;
+    }
+    .prod--nombre{
+        font-size: 100%;
+    }
+    .prod--estado{
+        font-size: 80%;
+        width: 96%;
+    }
+    .prod--precio{
+        font-size: 120%;
+    }
+    .prod{
+        width: 75%;
+    }
+}
+@media (max-width: 660px){
+    .main-tienda{
+        padding: 140px 3vw 20px 5vw;
+    }
+}
+@media (max-width: 630px) {
+    .listaproductos{
+        max-width: 50%;
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: (1 1fr);
+        grid-template-rows: (25 1fr);
+        gap: 6px 14px;
+        grid-template-areas:
+          "tienda--prod1"
+          "tienda--prod2"
+          "tienda--prod3"
+          "tienda--prod4"
+          "tienda--prod5"
+          "tienda--prod6"
+          "tienda--prod7"
+          "tienda--prod8"
+          "tienda--prod9"
+          "tienda--prod10"
+          "tienda--prod11"
+          "tienda--prod12"
+          "tienda--prod13"
+          "tienda--prod14"
+          "tienda--prod15"
+          "tienda--prod16"
+          "tienda--prod17"
+          "tienda--prod18"
+          "tienda--prod19"
+          "tienda--prod20"
+          "tienda--prod21"
+          "tienda--prod22"
+          "tienda--prod23"
+          "tienda--prod24"
+          "tienda--prod25";
+    }
+    .prod--estado p{
+        width: 110px;
+    }
+    .tienda--fraseprincipal{
+        font-size: 1.2rem;
+    }
+    .tienda--conseguir h4{
+        font-size: 18px;
+    }
+    .main-tienda{
+        padding: 140px 8vw 20px 30vw;
+    }
+}
+
+
+@media (max-width: 500px){
+    .main-tienda{
+        padding: 140px 5vw 20px 22vw;
+    }
+    .prod--img{ /*cambio tamaño productos*/
+        width: 84%;
+        margin-left: 10px;
+    }
+    .prod--tipo{
+        font-size: 120%;
+    }
+    .prod--nombre{
+        font-size: 90%;
+    }
+    .prod--estado{
+        font-size: 80%;
+        width: 95%;
+        margin: 0 0 0 10px;
+    }
+    .prod--estado p{
+        margin: 0;
+    }
+    .prod--precio{
+        font-size: 110%;
+    }
+    .prod{
+        width: 70%;
+        height: 88%;
+    }
+}
+@media (max-width: 400px){
+    .main-tienda{
+        padding: 140px 5vw 20px 20vw;
+    }
+}
+@media (max-width: 350px){
+    .main-tienda{
+        padding: 140px 1vw 20px 10vw;
+    }
+}
+
+/*----------------------------------- footer-----------------------------------------*/
+@media (max-width: 630px) {
+    .footer--mediosPagos{ /*footer*/
+        font-size: 18px;
+    }
+    .footer--mediosPagosImagenes img{
+        height: 42px;
+        margin: 0;
+    }
+    .footer--mediosPagosImagenes{
+        margin: 0;
+    }
+    .footer--copyright{
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+    .footer--extra a{
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px){
+    .footer-fondo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-division{
+        display: inline;
+        text-align: center;
+    }
+    .footer--extra{
+        display: inline;
+    }
+    .footer--extra a{
+        margin-top: 10px;
+    }
+    .footer--mediosPagosImagenes{
+        display: flex;
+        justify-content: center;
+    }
 }
