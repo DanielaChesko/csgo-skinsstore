@@ -15,7 +15,7 @@ amarillo  rgb(247, 215, 22)
     box-sizing: border-box;
 }
 
-/*------------------------------------------ INDEX -----------------------------------------*/
+/*______________________________________________________ INDEX _______________________________________________________________________*/
 /*------------------------------------------ header ----------------------------------------*/
 
 
@@ -951,7 +951,9 @@ footer a{
     font-weight: 500;
 }
 
-
+body{
+    width: 100vw!important;
+}
 /*________________________________________ RESPONSIVE ______________________________________*/
 /*------------------------------------------ header ----------------------------------------*/
 @media (max-width: 1300px){
@@ -989,10 +991,12 @@ footer a{
         margin: 0 0 0 10px;
         visibility: collapse;
     }
+
+    /* se oculta el header principal para situar el menu hamburguesa */
     .encabezado--oculto{
         display: none;
     }
-    .navbar-toggler{
+    .navbar-toggler{/*menu haburguesa visible*/
         visibility: visible;
     }
     #navbarNav{
@@ -1067,9 +1071,6 @@ footer a{
     .main-contacto h1{
         font-size: 35px;
     }
-    .main-contacto p{
-        font-size: 24px;
-    }
     .main--redes a img{
         width: 40px;
         height: 40px;
@@ -1081,9 +1082,6 @@ footer a{
     .main--contactodatos{
         padding-top: 50px;
     }
-    .main--contactodatos p{
-        font-size: 16px;
-    }
     .main--contactodatos form span{
         font-size: 16px;
     }
@@ -1092,9 +1090,6 @@ footer a{
     }
     .main--contactoselect option{
         font-size: 14px;
-    }
-    .main--contactotextarea{
-        height: 130px;
     }
     .main--contactoboton{
         font-size: 14px;
