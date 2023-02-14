@@ -1,0 +1,73 @@
+.main-nosotros{
+    background-color: $fondo;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nosotros img{
+    width: 100vw;
+    margin-top: 90px;
+    position: relative;
+}
+
+.main-nosotros h2{
+    background-image: url(../Recursos/body/Nosotros/fondo6.jpg);
+    padding: 3rem 5rem;
+    color: cornsilk;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.nosotros--principal{
+    display: flex;
+}
+
+.nosotros--principal img{
+    margin-top: 0;
+    padding: 1rem;
+    padding-left: 0;
+    width: 25vw;
+    border-radius: 10px;
+}
+
+.nosotros--principal div h4{
+    background-color: rgb(172, 44, 44);
+    color: $blanco;
+    padding: 1rem 2rem;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 1rem;
+    width: 45%;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+
+.nosotros--principal div p{
+    padding: 1rem 2rem;
+    color: $blanco;
+    font-size: 1.1rem;
+}
+
+.nosotros--experiencia{
+    background-color: rgb(41, 52, 98);
+    padding: 2rem 8rem;
+    color: $naranja;
+    font-size: 20px;
+}
+
+.nostros--grafico{
+    color: $blanco;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.nostros--grafico h4{
+    margin: 2rem 1rem;
+}
+
+.nostros--grafico span{
+    color: $rojo;
+}
+
+
