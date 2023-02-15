@@ -23,6 +23,7 @@
     color: $blanco;
     background-image: url(../Recursos/body/preguntasfrecuentes/fondo5.jpg);
     padding: 10px 0 10px 10px;
+    border-radius: 8px;
 }
 
 .pregfrecuentes div ol{ /*estilo de listas*/
@@ -103,6 +104,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
+    padding: 0;
 }
 
 .pregfrecuentes--vende h2{
@@ -136,12 +138,14 @@
 
 .pregfrecuentes--vende p{
     color: rgb(248, 198, 123);
+    margin: 0 15px 8px 15px;
 }
 
 .pregfrecuentes--vende div button{
     background-color: $naranja;
     margin-top: 7px;
     border-radius: 5px;
+    margin-left: 12px;
 }
 
 .pregfrecuentes--vende div a{
@@ -168,3 +172,104 @@
 
 
 
+@media (max-width: 1000px){
+    .pregfrecuentes{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .pregfrecuentes div{
+        margin-bottom: 15px;
+    }
+    .pregfrecuentestrade--listaoculta{
+        display: none;
+    }
+    .pregfrecuentes div img{
+        display: none;
+        margin: 0;
+    }
+    .pregfrecuentescompra ol{
+        margin: 0;
+    }
+    .pregfrecuentes h3{ /*titulos*/
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .pregfrecuentes div ol li{
+        font-size: 16.5px;
+    }
+    .pregfrecuentesinconveniente p{
+        font-size: 16.5px;
+        padding-left: 15px;
+    }
+    .pregfrecuentes--vende h2{
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .pregfrecuentes--vende h3{
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: 2px;
+    }
+    .pregfrecuentes--mediospago{
+        margin: 15px 0;
+    }
+}
+@media (max-width: 600px){
+    .main-pregfrecuentes{
+        padding-right: 0;
+    }
+    .pregfrecuentescompra{
+        margin-left: 0;
+    }
+    .pregfrecuentestrade{
+        margin-left: 0;
+    }
+    .pregfrecuentesinconveniente{
+        margin-left: 0;
+    }
+    .pregfrecuentes--vende h2{
+        width: 88vw;
+        font-size: 20px;
+    }
+    .pregfrecuentes--mediospago div img{
+        width: 60px;
+    }
+    .pregfrecuentes--vende h3{
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .pregfrecuentes--vende h5{
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+    .pregfrecuentes h3{
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+@media (max-width: 500px){
+    .pregfrecuentes div ol li{
+        font-size: 14px;
+    }
+    .pregfrecuentes div p{
+        font-size: 14px;
+    }
+    .pregfrecuentes--vende p{
+        font-size: 14px;
+    }
+    .pregfrecuentes--vende div a{
+        padding: 10px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .pregfrecuentes div{
+        margin: 0;
+        margin-bottom: 2px;
+    }
+    .pregfrecuentestrade ol{
+        margin: 0;
+    }
+}
