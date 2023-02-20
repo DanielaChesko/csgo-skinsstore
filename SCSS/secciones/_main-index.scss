@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: #020202;
     width: 100vw;
 }
 
 .index--primercontenedor{
     display: flex;
-    position:relative;
+    position: relative;
 }
 
 .index--video{
@@ -35,35 +35,17 @@
     border-bottom: groove 3px;
 }
 
-
-
 .main-index section{ /*galeria categorias*/
     display: flex;
-    width: 100vw;
-    padding: 30px 0 20px 0;
+    border-radius: 100px;
+    width: 90vw;
+    padding: 30px 0;
     justify-content: center;
     background-color: rgb(182, 145, 42);
-    border-bottom: rgb(97, 84, 9) solid 4px;
-    border-top: rgb(97, 84, 9) solid 4px;
-}
-.galeriaindex{
-    margin: 0 40px;
+    border: rgb(97, 84, 9) solid 5px;
 }
 
-.main-index section article{
-    text-align: center;
-}
-
-.main-index section article a{
-    display: flex;
-    flex-direction: column;
-}
-
-.main-index section article a img{
-    width: 130%;
-}
-
-.main-index section article a p{
+.main-index section article p{
     text-decoration: underline rgb(189, 168, 51);
     color: $blanco;
     font-weight: 500;
@@ -73,48 +55,43 @@
     width: 120%;
 }
 
+.main-index section article{
+    text-align: center;
+}
+
 .main-index section img{
     width: 70px;
     height: 70px;
 }
 
-.galeriaindex:hover {
-	animation: galeriaindex 1.5s linear infinite alternate ;
-}
+// .carousel{
+//     width: 100vw!important;
+// }
 
-@keyframes galeriaindex{ /*animacion galeria*/
-    0%{transform:translate(0)}
-    10%{transform:translate(-2px,-2px)}
-    20%{transform:translate(2px,-2px)}
-    30%{transform:translate(-2px,2px)}
-    40%{transform:translate(2px,2px)}
-    50%{transform:translate(-2px,-2px)}
-    60%{transform:translate(2px,-2px)}
-    70%{transform:translate(-2px,2px)}
-    80%{transform:translate(-2px,-2px)}
-    90%{transform:translate(2px,-2px)}
-    100%{transform:translate(0)}}
+ .carousel-item{
+     justify-content: space-evenly;
+     display: flex!important;
+ }
 
-.flechagaleriaindex{ /*animacion flechas*/
-    padding: 20px 0;
-}
+// .carousel-item article{
+//     width: 8vw;
+// }
 
-.flechagaleriaindexizquierda{
-    transition: transform 261ms ease-out;
-  }
-  
-.flechagaleriaindexizquierda:hover {
-    transform: translate(-31px, 0px);
-  }
+// .d-block{
+//     width: 500px!important;
+// }
 
-.flechagaleriaindexderecha {
-    transition: transform 261ms ease-out;
-  }
-  
-.flechagaleriaindexderecha:hover {
-    transform: translate(31px, 0px);
-  }
+// .carousel-oculto2{
+//     display: none;
+// }
 
+// .carousel-oculto3{
+//     display: none;
+// }
+
+// .carousel-oculto4{
+//     display: none;
+// }
 
 // revisa nuestro catalogo
 .abajoindex{

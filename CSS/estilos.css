@@ -138,7 +138,7 @@ header li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
+  background-color: #020202;
   width: 100vw; }
 
 .index--primercontenedor {
@@ -169,27 +169,14 @@ header li {
 .main-index section {
   /*galeria categorias*/
   display: flex;
-  width: 100vw;
-  padding: 30px 0 20px 0;
+  border-radius: 100px;
+  width: 90vw;
+  padding: 30px 0;
   justify-content: center;
   background-color: #b6912a;
-  border-bottom: #615409 solid 4px;
-  border-top: #615409 solid 4px; }
+  border: #615409 solid 5px; }
 
-.galeriaindex {
-  margin: 0 40px; }
-
-.main-index section article {
-  text-align: center; }
-
-.main-index section article a {
-  display: flex;
-  flex-direction: column; }
-
-.main-index section article a img {
-  width: 130%; }
-
-.main-index section article a p {
+.main-index section article p {
   text-decoration: underline #bda833;
   color: white;
   font-weight: 500;
@@ -198,53 +185,16 @@ header li {
   justify-content: center;
   width: 120%; }
 
+.main-index section article {
+  text-align: center; }
+
 .main-index section img {
   width: 70px;
   height: 70px; }
 
-.galeriaindex:hover {
-  animation: galeriaindex 1.5s linear infinite alternate; }
-
-@keyframes galeriaindex {
-  /*animacion galeria*/
-  0% {
-    transform: translate(0); }
-  10% {
-    transform: translate(-2px, -2px); }
-  20% {
-    transform: translate(2px, -2px); }
-  30% {
-    transform: translate(-2px, 2px); }
-  40% {
-    transform: translate(2px, 2px); }
-  50% {
-    transform: translate(-2px, -2px); }
-  60% {
-    transform: translate(2px, -2px); }
-  70% {
-    transform: translate(-2px, 2px); }
-  80% {
-    transform: translate(-2px, -2px); }
-  90% {
-    transform: translate(2px, -2px); }
-  100% {
-    transform: translate(0); } }
-
-.flechagaleriaindex {
-  /*animacion flechas*/
-  padding: 20px 0; }
-
-.flechagaleriaindexizquierda {
-  transition: transform 261ms ease-out; }
-
-.flechagaleriaindexizquierda:hover {
-  transform: translate(-31px, 0px); }
-
-.flechagaleriaindexderecha {
-  transition: transform 261ms ease-out; }
-
-.flechagaleriaindexderecha:hover {
-  transform: translate(31px, 0px); }
+.carousel-item {
+  justify-content: space-evenly;
+  display: flex !important; }
 
 .abajoindex {
   display: flex;
