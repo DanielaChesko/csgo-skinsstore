@@ -45,53 +45,24 @@
     border: rgb(97, 84, 9) solid 5px;
 }
 
-.main-index section article p{
-    text-decoration: underline rgb(189, 168, 51);
-    color: $blanco;
-    font-weight: 500;
-    margin-top: 10px;
-    font-style: italic;
-    justify-content: center;
-    width: 120%;
+.carousel{
+    width: 90vw;
 }
 
-.main-index section article{
-    text-align: center;
+.carousel-inner{
+    width: 70vw!important;
+    margin-left: 9vw;
+}
+
+.carousel-item{
+    display: flex!important;
+    justify-content: space-evenly;
 }
 
 .main-index section img{
-    width: 70px;
-    height: 70px;
+    width: 100px!important;
+    height: 90px!important;
 }
-
-// .carousel{
-//     width: 100vw!important;
-// }
-
- .carousel-item{
-     justify-content: space-evenly;
-     display: flex!important;
- }
-
-// .carousel-item article{
-//     width: 8vw;
-// }
-
-// .d-block{
-//     width: 500px!important;
-// }
-
-// .carousel-oculto2{
-//     display: none;
-// }
-
-// .carousel-oculto3{
-//     display: none;
-// }
-
-// .carousel-oculto4{
-//     display: none;
-// }
 
 // revisa nuestro catalogo
 .abajoindex{
