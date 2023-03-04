@@ -111,12 +111,19 @@
 
 .main--contactoboton{
     margin-bottom: 20px;
-    height: 25px;
+    height: 30px;
     font-size: 18px;
     font-weight: 500;
     border: solid 1.5px;
     border-radius: 3px;
     background-color: $naranja;
+}
+.apretar-boton {
+    transition: border 300ms ease-out, border-radius 300ms ease-out;
+  }
+  .apretar-boton:hover {
+    border: 2px solid rgb(209, 179, 27);
+   border-radius: 10px;
 }
 
 

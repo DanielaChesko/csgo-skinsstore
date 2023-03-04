@@ -166,30 +166,84 @@ header li {
   font-size: 130%;
   border-bottom: groove 3px; }
 
-.main-index section {
+.index--section {
   /*galeria categorias*/
   display: flex;
+  justify-content: space-around;
   border-radius: 100px;
-  width: 90vw;
-  padding: 30px 0;
-  justify-content: center;
+  padding: 0 4.5vw;
+  width: 93vw;
   background-color: #b6912a;
   border: #615409 solid 5px; }
 
-.carousel {
-  width: 90vw; }
+.index--section article img {
+  height: 13vh; }
 
-.carousel-inner {
-  width: 70vw !important;
-  margin-left: 9vw; }
+.index--section article {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2vw;
+  margin: 20px 2vw; }
 
-.carousel-item {
-  display: flex !important;
-  justify-content: space-evenly; }
+.index--section article p {
+  font-weight: 500;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px; }
 
-.main-index section img {
-  width: 100px !important;
-  height: 90px !important; }
+.index--section2 {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 100px;
+  padding: 0 4.5vw;
+  width: 93vw;
+  background-color: #b6912a;
+  border: #615409 solid 5px; }
+
+.index--section2 div article img {
+  height: 13vh; }
+
+.index--section2 div article {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2vw;
+  margin: 20px 2vw; }
+
+.index--section2 div article p {
+  font-weight: 500;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px; }
+
+.index--section3 {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 100px;
+  padding: 0 4.5vw;
+  width: 93vw;
+  background-color: #b6912a;
+  border: #615409 solid 5px; }
+
+.index--section3 div article img {
+  height: 13vh; }
+
+.index--section3 div article {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2vw;
+  margin: 20px 2vw; }
+
+.index--section3 div article p {
+  font-weight: 500;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px; }
 
 .abajoindex {
   display: flex;
@@ -404,12 +458,19 @@ header li {
 
 .main--contactoboton {
   margin-bottom: 20px;
-  height: 25px;
+  height: 30px;
   font-size: 18px;
   font-weight: 500;
   border: solid 1.5px;
   border-radius: 3px;
   background-color: #ec9b3b; }
+
+.apretar-boton {
+  transition: border 300ms ease-out, border-radius 300ms ease-out; }
+
+.apretar-boton:hover {
+  border: 2px solid #d1b31b;
+  border-radius: 10px; }
 
 @media (max-width: 1300px) {
   .main-contacto h1 {
@@ -729,6 +790,13 @@ header li {
   border-radius: 5px;
   margin-left: 12px; }
 
+.apretar-boton {
+  transition: border 300ms ease-out, border-radius 300ms ease-out; }
+
+.apretar-boton:hover {
+  border: 2px solid #d1b31b;
+  border-radius: 10px; }
+
 .pregfrecuentes--vende div a {
   color: white;
   text-decoration: none;
@@ -882,6 +950,74 @@ header li {
 .nosotros--grafico h4 {
   margin: 2rem 1rem;
   font-size: 50px; }
+
+.bounce-left:hover {
+  animation: bounce-left 1.3s both; }
+
+@keyframes bounce-left {
+  0% {
+    transform: translateX(-48px);
+    animation-timing-function: ease-in;
+    opacity: 1; }
+  24% {
+    opacity: 1; }
+  40% {
+    transform: translateX(-26px);
+    animation-timing-function: ease-in; }
+  65% {
+    transform: translateX(-13px);
+    animation-timing-function: ease-in; }
+  82% {
+    transform: translateX(-6.5px);
+    animation-timing-function: ease-in; }
+  93% {
+    transform: translateX(-4px);
+    animation-timing-function: ease-in; }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out; }
+  100% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out;
+    opacity: 1; } }
+
+.bounce-right:hover {
+  animation: bounce-right 1.3s both; }
+
+@keyframes bounce-right {
+  0% {
+    transform: translateX(48px);
+    animation-timing-function: ease-in;
+    opacity: 1; }
+  24% {
+    opacity: 1; }
+  40% {
+    transform: translateX(26px);
+    animation-timing-function: ease-in; }
+  65% {
+    transform: translateX(13px);
+    animation-timing-function: ease-in; }
+  82% {
+    transform: translateX(6.5px);
+    animation-timing-function: ease-in; }
+  93% {
+    transform: translateX(4px);
+    animation-timing-function: ease-in; }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out; }
+  100% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out;
+    opacity: 1; } }
 
 .nosotros--grafico span {
   color: #f24c4c; }
@@ -1127,6 +1263,15 @@ header li {
 .prod--precio25 {
   margin-top: 3.5rem; }
 
+.scale-down-center:hover {
+  animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@keyframes scale-down-center {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.04); } }
+
 .tienda--conseguir {
   display: flex;
   flex-direction: column;
@@ -1138,16 +1283,26 @@ header li {
   align-items: center;
   color: white; }
 
-.tienda--conseguir a {
-  color: black;
-  font-size: 18px;
-  font-weight: 500;
+.tienda--conseguir button {
+  background-color: #ec9b3b;
   border: solid 1.5px;
   border-radius: 3px;
-  text-decoration: none;
   padding: 0 20px;
-  background-color: #ec9b3b;
   margin-top: 1rem; }
+
+.tienda--conseguir button a {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0 20px; }
+
+.apretar-boton {
+  transition: border 300ms ease-out, border-radius 300ms ease-out; }
+
+.apretar-boton:hover {
+  border: 2px solid #d1b31b;
+  border-radius: 10px; }
 
 @media (max-width: 1440px) {
   .listaproductos {

@@ -35,33 +35,88 @@
     border-bottom: groove 3px;
 }
 
-.main-index section{ /*galeria categorias*/
+.index--section{ /*galeria categorias*/
     display: flex;
+    justify-content: space-around;
     border-radius: 100px;
-    width: 90vw;
-    padding: 30px 0;
-    justify-content: center;
+    padding: 0 4.5vw;
+    width: 93vw;
     background-color: rgb(182, 145, 42);
     border: rgb(97, 84, 9) solid 5px;
 }
 
-.carousel{
-    width: 90vw;
+.index--section article img{
+    height: 13vh;
 }
 
-.carousel-inner{
-    width: 70vw!important;
-    margin-left: 9vw;
+.index--section article{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2vw;
+    margin: 20px 2vw;
 }
 
-.carousel-item{
-    display: flex!important;
-    justify-content: space-evenly;
+.index--section article p{
+    font-weight: 500;
+    font-style: italic;
+    color: $blanco;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
 }
 
-.main-index section img{
-    width: 100px!important;
-    height: 90px!important;
+.index--section2{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 100px;
+    padding: 0 4.5vw;
+    width: 93vw;
+    background-color: rgb(182, 145, 42);
+    border: rgb(97, 84, 9) solid 5px;
+}
+.index--section2 div article img{
+    height: 13vh;
+}
+.index--section2 div article{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2vw;
+    margin: 20px 2vw;
+}
+.index--section2 div article p{
+    font-weight: 500;
+    font-style: italic;
+    color: $blanco;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.index--section3{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 100px;
+    padding: 0 4.5vw;
+    width: 93vw;
+    background-color: rgb(182, 145, 42);
+    border: rgb(97, 84, 9) solid 5px;
+}
+.index--section3 div article img{
+    height: 13vh;
+}
+.index--section3 div article{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2vw;
+    margin: 20px 2vw;
+}
+.index--section3 div article p{
+    font-weight: 500;
+    font-style: italic;
+    color: $blanco;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
 }
 
 // revisa nuestro catalogo

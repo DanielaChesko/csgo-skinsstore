@@ -147,6 +147,14 @@
     border-radius: 5px;
     margin-left: 12px;
 }
+.apretar-boton {
+    transition: border 300ms ease-out, border-radius 300ms ease-out;
+  }
+  
+  .apretar-boton:hover {
+    border: 2px solid rgb(209, 179, 27);
+   border-radius: 10px;
+  }
 
 .pregfrecuentes--vende div a{
     color: $blanco;

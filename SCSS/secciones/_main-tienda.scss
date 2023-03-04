@@ -209,6 +209,18 @@
     margin-top: 3.5rem;
 }
 
+.scale-down-center:hover{
+	animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes scale-down-center {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.04);
+    }
+}
+
 .tienda--conseguir{
     display: flex;
     flex-direction: column;
@@ -222,18 +234,27 @@
     color: $blanco;
 }
 
-.tienda--conseguir a{
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
+.tienda--conseguir button{
+    background-color: $naranja;
     border: solid 1.5px;
     border-radius: 3px;
-    text-decoration: none;
     padding: 0 20px;
-    background-color: $naranja;
     margin-top: 1rem;
 }
-
+.tienda--conseguir button a{
+    color: $blanco;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0 20px;
+}
+.apretar-boton {
+    transition: border 300ms ease-out, border-radius 300ms ease-out;
+  }
+  .apretar-boton:hover {
+    border: 2px solid rgb(209, 179, 27);
+   border-radius: 10px;
+}
 
 
 @media (max-width: 1440px) {
