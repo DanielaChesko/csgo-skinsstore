@@ -1,0 +1,149 @@
+.encabezado{ /*general*/
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 36%, rgba(18,16,16,1) 100%);
+    position: fixed;
+    width: 100vw;
+    z-index: 4;
+}
+
+
+.pulse2 { /*animacion secciones links*/
+    transition: transform 200ms linear;
+  }
+.pulse2:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
+}
+
+
+.logo{
+    width: 115px;
+    height: 115px;
+    margin-top: 5px;
+}
+
+.girologo { /*animacion giro logo*/
+    transition: transform 1000ms ease-out 30ms;
+  }
+.girologo:hover {
+    transform: rotate(360deg) translate(0px, 0px);
+    }
+
+
+.encabezado nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.font-seccion{
+    font-size: 1.39rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(242, 76, 76);
+    height: 50px;
+    margin-top: 15px;
+}
+.font-seccion:hover{
+    border-bottom: solid 2px;
+}
+
+.pregFrecuentes{ /*para que quede centrado*/
+    font-size: 1.3rem;
+    line-height: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 124px;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(242, 76, 76);
+    height: 65px;
+    margin-top: 10px;
+}
+.pregFrecuentes:hover{
+    border-bottom: solid 2px;
+}
+
+header li{ /*alto header*/
+    display: inline-block;
+    height: 80px;
+}
+
+.visibilidad-burger{ /*burger*/
+    display: none !important;
+}
+
+.nav-item{
+    height: 50px;
+}
+
+.burger-activo{
+    color: rgb(242, 76, 76)!important;
+    font-size: 16px!important;
+    font-weight: 500!important;
+}
+
+.navbar-toggler .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250, 250, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+
+@media (max-width: 1300px){
+    .font-seccion{
+        font-size: 1.3rem;
+    }
+    .pregFrecuentes {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 1100px) {
+    .font-seccion{
+        font-size: 1.2rem;
+    }
+    .pregFrecuentes {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 700px){
+    .font-seccion{
+        font-size: 18px;
+    }
+    .pregFrecuentes{
+        font-size: 18px;
+    }
+}
+@media (max-width: 630px) {
+    .visibilidad-burger{
+        display: flex!important;
+        position: relative!important;
+        width: 200px;
+        z-index: 0;
+        padding: 0!important;
+        bottom: 20px;
+        margin: 0 0 0 10px;
+        visibility: collapse;
+    }
+
+    /* se oculta el header principal para situar el menu hamburguesa */
+    .encabezado--oculto{
+        display: none;
+    }
+    .navbar-toggler{/*menu haburguesa visible*/
+        visibility: visible;
+    }
+    #navbarNav{
+        visibility: visible;
+    }
+    header li{ /*alto header*/
+        display: inline-block;
+        height: 40px;
+    }
+    .container-burger{
+        margin-top: 40px;
+    }
+}
