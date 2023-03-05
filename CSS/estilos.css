@@ -776,7 +776,7 @@ header li {
   font-size: 30px;
   margin-bottom: 10px;
   color: white;
-  background-image: url(../../Recursos/body/preguntasfrecuentes/fondosubtitulos.jpg);
+  background-image: url(https://res.cloudinary.com/dbgi6bwbg/image/upload/v1678044105/fondosubtitulos_nsvuoj.jpg);
   padding: 10px 0 10px 10px;
   border-radius: 8px; }
 
@@ -785,7 +785,7 @@ header li {
   font-size: 30px;
   margin-bottom: 10px;
   color: white;
-  background-image: url(../../Recursos/body/preguntasfrecuentes/fondosubtitulos.jpg);
+  background-image: url(https://res.cloudinary.com/dbgi6bwbg/image/upload/v1678044105/fondosubtitulos_nsvuoj.jpg);
   padding: 10px 0 10px 10px;
   border-radius: 8px; }
 
@@ -865,7 +865,7 @@ header li {
   font-size: 30px;
   margin-bottom: 10px;
   color: white;
-  background-image: url(../Recursos/body/preguntasfrecuentes/fondo5.jpg);
+  background-image: url(https://res.cloudinary.com/dbgi6bwbg/image/upload/v1678044105/fondosubtitulos_nsvuoj.jpg);
   padding: 10px 0 10px 10px; }
 
 .pregfrecuentes--vende h5 {
@@ -933,6 +933,10 @@ header li {
     margin: 0; }
   .pregfrecuentescompra ol {
     margin: 0; }
+  .pregfrecuentes h1 {
+    /*titulos*/
+    font-weight: 600;
+    font-size: 25px; }
   .pregfrecuentes h3 {
     /*titulos*/
     font-weight: 600;
@@ -974,6 +978,9 @@ header li {
     font-size: 14px;
     margin-bottom: 10px;
     font-weight: 400; }
+  .pregfrecuentes h1 {
+    font-weight: 500;
+    font-size: 20px; }
   .pregfrecuentes h3 {
     font-weight: 500;
     font-size: 20px; } }
@@ -1026,7 +1033,7 @@ header li {
   border-radius: 10px; }
 
 .nosotros--principal div h4 {
-  background-image: url(../../Recursos/body/nosotros/fondo.jpg);
+  background-image: url(https://res.cloudinary.com/dbgi6bwbg/image/upload/v1678043870/fondo_xyhe1c.jpg);
   color: white;
   padding: 1rem 2rem;
   font-weight: 500;
