@@ -1,4 +1,4 @@
-.encabezado{
+.encabezado{ /*general*/
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 36%, rgba(18,16,16,1) 100%);
     position: fixed;
@@ -7,10 +7,9 @@
 }
 
 
-.pulse2 { /*animacion categorias*/
+.pulse2 { /*animacion secciones links*/
     transition: transform 200ms linear;
   }
-
 .pulse2:hover {
     transform: translate(0px, 0px) scale(1.1, 1.1);
 }
@@ -22,10 +21,9 @@
     margin-top: 5px;
 }
 
-.girologo { /*giro logo*/
+.girologo { /*animacion giro logo*/
     transition: transform 1000ms ease-out 30ms;
   }
-  
 .girologo:hover {
     transform: rotate(360deg) translate(0px, 0px);
     }
@@ -49,7 +47,6 @@
     height: 50px;
     margin-top: 15px;
 }
-
 .font-seccion:hover{
     border-bottom: solid 2px;
 }
@@ -67,7 +64,6 @@
     height: 65px;
     margin-top: 10px;
 }
-
 .pregFrecuentes:hover{
     border-bottom: solid 2px;
 }
@@ -77,7 +73,7 @@ header li{ /*alto header*/
     height: 80px;
 }
 
-.visibilidad{
+.visibilidad-burger{ /*burger*/
     display: none !important;
 }
 
@@ -122,7 +118,7 @@ header li{ /*alto header*/
     }
 }
 @media (max-width: 630px) {
-    .visibilidad{
+    .visibilidad-burger{
         display: flex!important;
         position: relative!important;
         width: 200px;

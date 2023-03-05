@@ -1,4 +1,4 @@
-.main-index{
+.main-index{ /*general*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@
     display: none;
 }
 
-.index--video3{
+.index--video3{ /*videooculto*/
     width: 100vw;
     display: none;
 }
@@ -35,7 +35,7 @@
     border-bottom: groove 3px;
 }
 
-.index--section{ /*galeria categorias*/
+.index--section{ /*galeria categorias productos*/
     display: flex;
     justify-content: space-around;
     border-radius: 100px;
@@ -65,7 +65,7 @@
     margin-top: 20px;
 }
 
-.index--section2{
+.index--section2{ /*galeria categorias productos 2*/
     display: flex;
     justify-content: space-around;
     border-radius: 100px;
@@ -91,8 +91,14 @@
     margin: 0;
     margin-top: 20px;
 }
+.index-secction2-visibilidad{
+    display: none;
+    visibility: collapse;
+    position: absolute;
+}
 
-.index--section3{
+
+.index--section3{ /*galeria categorias productos 3*/
     display: flex;
     justify-content: space-around;
     border-radius: 100px;
@@ -118,6 +124,39 @@
     margin: 0;
     margin-top: 20px;
 }
+.index-secction3-visibilidad{
+    display: none;
+    visibility: collapse;
+    position: absolute;
+}
+
+.heartbeat:hover{ /*animacion de galeria categorias productos*/
+	animation: heartbeat 1.5s ease-in-out infinite both;
+}
+@keyframes heartbeat {
+    from {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+}
+
 
 // revisa nuestro catalogo
 .abajoindex{
@@ -152,10 +191,10 @@
     top: 37%;
     z-index: 4;
 }
+
 .abajoindex--imagenak47 {
     transition: transform 580ms ease-out;
   }
-  
 .abajoindex--imagenak47:hover {
     transform: rotate(11deg) translate(-76px, -74px);
   }
@@ -171,6 +210,19 @@
     .main-index{
         padding-top: 4%;
     }
+    .index--section{ /*galeria categorias*/
+        border-radius: 100px;
+        width: 90vw;
+        border: rgb(97, 84, 9) solid 4px;
+    }
+    .index--section article img{
+        height: 10vh;
+    }
+    .index--section article p{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 16px;
+    }
 }
 @media (max-width: 900px){
     .main-index div a { 
@@ -183,10 +235,21 @@
         padding-top: 6%;
     }
 }
-
 @media (max-width: 800px){
     .main-index{
         padding-top: 8%;
+    }
+    .index--section{ /*galeria categorias*/
+        border-radius: 90px;
+        width: 88vw;
+        border: rgb(97, 84, 9) solid 3.4px;
+    }
+    .index--section article img{
+        height: 8vh;
+    }
+    .index--section article p{
+        font-size: 12px;
+        margin-top: 15px;
     }
 }
 @media (max-width: 750px){
@@ -203,13 +266,33 @@
         font-weight: 800;
         font-size: 112%;
     }
-
 }
 @media (max-width: 650px){
     .main-index div a { 
         left: 38%;
         font-weight: 700;
         font-size: 112%;
+    }
+    .index-secction1-visibilidad{
+        display: none;
+        visibility: collapse;
+    }
+    .index-secction2-visibilidad{
+        display: flex;
+        visibility: visible;
+        position: relative;
+    }
+    .index--section2{
+        border-radius: 90px;
+        width: 84vw;
+        border: rgb(97, 84, 9) solid 2.8px;
+    }
+    .index--section2 div article img{
+        height: 8vh;
+    }
+    .index--section2 div article p{
+        font-weight: 400;
+        font-size: 12px;
     }
 }
 @media (max-width: 530px){
@@ -246,7 +329,6 @@
         left: 32%;
         font-size: 108%;
         border-bottom: none;
-
     }
 }
 @media (max-width: 400px){
@@ -261,5 +343,29 @@
     .abajoindex--imagenfondo3{
         visibility: visible;
         display: block;
+    }
+    .index-secction2-visibilidad{
+        display: none;
+        visibility: collapse;
+    }
+    .index-secction3-visibilidad{
+        display: flex;
+        visibility: visible;
+        position: relative;
+    }
+    .index--section3{
+        margin: 20px 0;
+        border-radius: 70px;
+        width: 85vw;
+        border: rgb(97, 84, 9) solid 2px;
+    }
+    .index--section3 div article img{
+        height: 6vh;
+        width: 16vw;
+    }
+    .index--section3 div article p{
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: 10px;
     }
 }
